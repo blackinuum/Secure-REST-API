@@ -107,16 +107,6 @@ Le but est de concevoir une API **robuste, scalable et sécurisée** qui :
 yaml
 Copier le code
 
----
-
-## 👥 Équipe
-- **BERHIL Tarik**
-- **BAZOURHI Mohamed Saad**
-- **ELKADI Ayoub**
-- **IZM Karim**  
-🧭 Encadré par **Prof. ELMENDILI Fatna**
-
----
 
 ## 📚 Conclusion
 
@@ -125,5 +115,3 @@ Il combine à la fois des compétences en **développement full-stack** et en **
 
 ---
 
-## 📜 Licence
-Projet académique – Usage éducatif et démonstratif.
