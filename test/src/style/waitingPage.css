@@ -1,0 +1,29 @@
+#waitingPage__Container {
+    width : 100%;
+    height : 100vh;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+}
+#logo__Container{
+   flex : 85%;
+   display : flex;
+   align-items: center;
+}
+#waitingPage__footer{
+    position : relative;
+    bottom : 10px;
+    text-align : center;
+}
+#waitingPage__Logo{
+    width : 100px;
+    height : 100px;
+    
+}
+#footer-I{
+    font-weight : 900;
+}
+#footer-II{
+    font-family :'Courier New', Courier, monospace;
+}

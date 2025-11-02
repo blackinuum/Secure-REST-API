@@ -1,0 +1,231 @@
+@import url("./style/nav.css");
+@import url("./style/post.css");
+@import url("./style/newPost.css");
+@import url("./style/waitingPage.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.App {
+  background-color: #ebe9e9;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#login__formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes login__form-popping {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+
+  }
+}
+
+#login__form {
+  width: 35rem;
+  height: auto;
+  border: .1px solid white;
+  padding: 25px 20px;
+  background-color: #002333f5;
+  border-radius: 5px;
+  box-shadow: 0 0 20px grey;
+  animation: login__form-popping .5s;
+  transition : height .75s ease-in;
+}
+
+#loginForm__logo {
+  width: 85px;
+  height: 85px;
+
+}
+
+#header__end {
+  margin-top: .5rem;
+  height: 1px;
+  width: 100%;
+  background-color: gray;
+}
+
+#form__Title {
+  margin-top: 1.6rem;
+  text-align: center;
+}
+
+#form__Title h1 {
+  display: inline;
+  background: linear-gradient(to left, #159A9C 60%, #DEEFE7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#login__formBody {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  margin: 1rem 0 1.3rem .5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+}
+
+#login__formBody label {
+  color: whitesmoke;
+  font-size: 22px;
+}
+
+.inputField {
+  background-color: transparent;
+  height: 100%;
+  width: 18%;
+  border: none;
+  flex: 80%;
+  outline: none;
+  font-size: 17px;
+  font-weight : 700;
+}
+
+.input__container {
+  border: none;
+  outline: none;
+  width: 300px;
+  height: 2rem;
+  border-radius: 3px;
+  padding-left: .5rem;
+  font-size: 18px;
+  transition: box-shadow cyan .75s;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.login__button {
+  width: 30rem;
+  height: 2.2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #159A9C;
+  font-weight: bold;
+  color: whitesmoke;
+  font-size: 16px;
+}
+
+.signIn__button {
+  width: 30rem;
+  height: 2.2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #159A9C;
+  font-weight: bold;
+  color: whitesmoke;
+  font-size: 16px;
+  margin-top: 2rem;
+}
+
+#sign {
+  color: rgb(187, 186, 186);
+  font-weight: 100;
+  font-size: 14px;
+  text-align: center;
+}
+
+#signIn__sectionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 2.4rem;
+
+}
+
+.singIn__seperator {
+  content: '';
+  width: 25%;
+  height: 1px;
+  background-color: gray;
+}
+
+.eye {
+  cursor: pointer;
+  width: 25px;
+  margin-right: .25rem;
+}
+
+.Error {
+  margin: 1.2rem 0;
+  text-align: center;
+  color: red;
+  font-weight : 00;
+}
+
+#signIn__Container{
+  text-align: center;
+}
+
+.spinner {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  animation: spinner-plncf9 4s infinite;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  border: 11.5px solid;
+  border-radius: 50%;
+  border-color: rgba(4, 70, 101, 0.96) rgba(4, 70, 101, 0.96) #0000 #0000;
+  mix-blend-mode: darken;
+  animation: spinner-plncf9 1s infinite linear;
+}
+
+.spinner::after {
+  border-color: #0000 #0000 #cbccea #cbccea;
+  animation-direction: reverse;
+}
+
+@keyframes spinner-plncf9 {
+  100% {
+     transform: rotate(1turn);
+  }
+}
+
+#spinner__Container {
+  display : flex;
+  height : 89vh;
+  justify-content: center;
+  align-items: center;
+}
+#pageNotFound{
+  content : " ";
+  width : 100%;
+  height : 100vh;
+  background-image: url("./assets/images/404.jpg");
+  background-size: cover;
+}
